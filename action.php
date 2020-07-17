@@ -1,6 +1,6 @@
 <?php
 
-/*
+$hodnota = $_POST['castka'];
 
 $apiClient = new ApiClient(
     new CurlDriver(),
@@ -15,7 +15,7 @@ $requestFactory = new RequestFactory('012345');
 
 // cart has to have at least 1 but most of 2 items
 $cart = new Cart(Currency::get(Currency::EUR));
-$cart->addItem('Nákup', 1, 1.9 * 100);
+$cart->addItem('Nákup', 1, $hodnota * 100);
 
 $paymentResponse = $requestFactory->createInitPayment(
     123,

@@ -1,0 +1,6 @@
+{
+	"require": {
+		"nette/database": "^2.4",
+		"slevomat/csob-gateway": "^4.2"
+	}
+}
